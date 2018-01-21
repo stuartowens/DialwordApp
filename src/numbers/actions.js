@@ -3,12 +3,14 @@
 export const key = 'numbers';
 
 // action type constants
+export const SEARCH = 'SEARCH';
 export const NUMBERS_FETCH = 'NUMBERS_FETCH';
 export const NUMBERS_FETCH_CANCEL = 'NUMBERS_FETCH_CANCEL';
 export const NUMBERS_FETCH_FULFILLED = 'NUMBERS_FETCH_FULFILLED';
 export const NUMBERS_FETCH_REJECTED = 'NUMBERS_FETCH_REJECTED';
 
 export const actionTypes = {
+  SEARCH,
   NUMBERS_FETCH,
   NUMBERS_FETCH_CANCEL,
   NUMBERS_FETCH_FULFILLED,
@@ -16,6 +18,10 @@ export const actionTypes = {
 };
 
 // action creators
+export const searchFieldFilled = (event) => ({
+  type: SEARCH,
+  payload: event.target.value
+});
 export const numbersFetch = () => ({ type: NUMBERS_FETCH });
 export const numbersFetchCancel = () => ({ type: NUMBERS_FETCH_CANCEL });
 export const numbersFetchFulfilled = (numbers) => ({
@@ -29,6 +35,7 @@ export const numbersFetchRejected = (err) => ({
 });
 
 export const actions = {
+  searchFieldFilled,
   numbersFetch,
   numbersFetchCancel,
   numbersFetchFulfilled,

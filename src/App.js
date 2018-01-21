@@ -4,15 +4,17 @@ import { connect } from 'react-redux';
 import { component as Numbers,
          selectors as numbersSel,
          actions as numbersActions } from './numbers/index';
-const { numbersFetch, numbersFetchCancel } = numbersActions;
+const { numbersFetch, numbersFetchCancel, searchFieldFilled } = numbersActions;
 
 const CNumbers = connect(
   state => ({
     numbers: numbersSel.numbers(state),
+    searchField: numbersSel.searchField(state),
     fetchStatus: numbersSel.fetchStatus(state)
   }),
   {
     onFetch: numbersFetch,
+    onSearchFieldFilled: searchFieldFilled,
     onCancelFetch: numbersFetchCancel
     // onFetchNumber: numbersFetch
   }
