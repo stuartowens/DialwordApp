@@ -13,8 +13,8 @@ const CNumbers = connect(
   }),
   {
     onFetch: numbersFetch,
-    onCancelFetch: numbersFetchCancel,
-    // onFetchNumber: numberFetch
+    onCancelFetch: numbersFetchCancel
+    // onFetchNumber: numbersFetch
   }
 )(Numbers);
 

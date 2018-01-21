@@ -16,8 +16,8 @@ export const numbersFetchLogic = createLogic({
     try {
       // the delay query param adds arbitrary delay to the response
       const numbers =
-        await httpClient.get(`https://reqres.in/api/numbers?delay=${delay}`)
-                        .then(resp => resp.data.data); // use data property of payload
+        await httpClient.post("https://gm9gixp04b.execute-api.us-east-1.amazonaws.com/Zed/byname",{"startsWith":"S"}
+      ).then(resp => resp.data); // use data property of payload
       dispatch(numbersFetchFulfilled(numbers));
     } catch(err) {
       console.error(err); // might be a render err
