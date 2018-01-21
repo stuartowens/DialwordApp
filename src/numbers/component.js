@@ -1,27 +1,29 @@
 import React from 'react';
 
 export default function Numbers({ numbers, fetchStatus, onFetch, searchField,
-                                onCancelFetch, onSearchFieldFilled }) {
+                                onCancelFetch, onSearchFieldFilled, onCategoryFieldFilled, onPrefixFieldFilled }) {
   return (
     <div>
+      <form >
         <div>Status: { fetchStatus }</div>
-        <select name="prefix" size="5">
+        <select name="prefix" size="5" autoFocus="true" onChange={ onPrefixFieldFilled }>
           <option value="">Any</option>
           <option value="800">800</option>
           <option value="888">888</option>
           <option value="877">877</option>
           <option value="866">866</option>
         </select>
-        <select name="category" size="5">
+        <select type="text" name="category" size="5" autoFocus="true" onChange={ onCategoryFieldFilled }>
           <option value="">Any</option>
           <option value="Medical">Doctors</option>
           <option value="Bailbonds">Bailbonds</option>
           <option value="Snoring">Snoring</option>
           <option value="Pain">Pain</option>
         </select>
-        <input type="text" autoFocus="true" onChange={ onSearchFieldFilled } name="searchField" />
+        <input type="text" name="searchField" autoFocus="true" onChange={ onSearchFieldFilled } />
         {/* <button onClick={ onFetch }>Fetch Numbers</button> */}
         <button onClick={ onCancelFetch }>Cancel</button>
+      </form>
       <ul>
           {numbers.map(number => {
       return <div>
