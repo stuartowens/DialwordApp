@@ -17,9 +17,8 @@ export const numberFetchLogic = createLogic({
   }
 });
 
-async functin fetchNumber(httpClient, name) {
-  const number = await httpClient.post('https://gm9gixp04b.execute-api.us-east-1.amazonaws.com/Zed/byname', {startsWith: name})
-    .then(resp => resp.data);
+async function fetchNumber(httpClient, name) {
+  const number = await httpClient.post('https://gm9gixp04b.execute-api.us-east-1.amazonaws.com/Zed/byname', {startsWith: name}).then(resp => resp.data);
 
   return number;
 }

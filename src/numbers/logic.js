@@ -1,8 +1,6 @@
 import { createLogic } from 'redux-logic';
-import { SEARCH, CATEGORY, NUMBERS_FETCH, NUMBERS_FETCH_CANCEL, numbersFetchFulfilled,
+import { SEARCH, numbersFetchFulfilled,
          numbersFetchRejected } from './actions';
-
-const delay = 2; // 2s delay for interactive use of cancel/take latest
 
 export const numbersFetchLogic = createLogic({
   type: SEARCH,
@@ -27,7 +25,9 @@ export const numbersFetchLogic = createLogic({
       let currentState = getState().numbers;
       let prefix = currentState.prefix;
       let category = currentState.category;
-      const numbers = await httpClient.post("https://kvcb6yoa1b.execute-api.us-east-1.amazonaws.com/Zed/bycatprefix",{ "startsWith": action.payload, "prefix":prefix, "category":category}).then(resp => resp.data)
+      const numbers = await httpClient.post("https://kvcb6yoa1b.execute-api.us-east-1.amazonaws.com/Zed/bycatprefix",
+        { "startsWith": action.payload, "prefix":prefix, "category":category})
+        .then(resp => resp.data)
       dispatch(numbersFetchFulfilled(numbers));
     } catch(err) {
       console.error(err); // might be a render err

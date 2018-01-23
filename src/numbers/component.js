@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function Numbers({ numbers, fetchStatus, onFetch, searchField,
-                                onCancelFetch, onSearchFieldFilled, onCategoryFieldFilled, onPrefixFieldFilled }) {
+                                onCancelFetch, onSearchFieldFilled, onCategoryFieldFilled, onPrefixFieldFilled, onFetchNumber }) {
   return (
     <div>
       <form >
@@ -29,7 +29,7 @@ export default function Numbers({ numbers, fetchStatus, onFetch, searchField,
       return <div>
               <li key={ number._id }>
                 <h3>Number: {number.number}</h3>
-                <button onClick={ () => console.log(number.category) } >
+                <button onClick={ onFetchNumber } >
                   { number.name }
                 </button>
               </li>
