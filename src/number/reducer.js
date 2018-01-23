@@ -16,7 +16,7 @@ export default function reducer(state = initialState, action) {
     return {
       ...state,
       number: null,
-      fetchStatus: `fetching ${action.payload}...${(new Date()).toLocaleString()}`
+      fetchStatus: `fetching ${action.payload[0]}...${(new Date()).toLocaleString()}`
     };
     case NUMBER_FETCH_FULFILLED:
       return {

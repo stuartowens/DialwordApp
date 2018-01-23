@@ -10,7 +10,7 @@ import {
 import { component as Numbers,
          selectors as numbersSel,
          actions as numbersActions } from './numbers/index';
-const { numbersFetch, numbersFetchCancel, searchFieldFilled, categoryFieldFilled, prefixFieldFilled } = numbersActions;
+const { numbersFetch, numbersFetchCancel, searchFieldFilled } = numbersActions;
 const { numberFetch } = numberActions;
 
 
@@ -28,17 +28,13 @@ const CNumber = connect(
 const CNumbers = connect(
   state => ({
     numbers: numbersSel.numbers(state),
-    searchField: numbersSel.searchField(state),
-    category: numbersSel.category(state),
-    prefix: numbersSel.prefix(state),
+    fields: numbersSel.fields(state),
     fetchStatus: numbersSel.fetchStatus(state)
   }),
   {
     onFetch: numbersFetch,
     onSearchFieldFilled: searchFieldFilled,
     onCancelFetch: numbersFetchCancel,
-    onCategoryFieldFilled: categoryFieldFilled,
-    onPrefixFieldFilled: prefixFieldFilled,
     onFetchNumber: numberFetch
   }
 )(Numbers);

@@ -1,19 +1,19 @@
-import { key, CATEGORY, PREFIX, SEARCH, NUMBERS_FETCH, NUMBERS_FETCH_CANCEL, NUMBERS_FETCH_FULFILLED,
+import { key, SEARCH_FIELD_UPDATED, NUMBERS_FETCH, NUMBERS_FETCH_CANCEL, NUMBERS_FETCH_FULFILLED,
          NUMBERS_FETCH_REJECTED } from './actions';
 
 export const selectors = {
-  numbers: state => state[key].list,
-  searchField: state => state[key].searchField,
-  category: state => state[key].category,
-  prefix: state => state[key].prefix,
+  numbers: state => state[key].numbers,
+  fields: state => state[key].fields,
   fetchStatus: state => state[key].fetchStatus
 };
 
 const initialState = {
-  list: [],
-  searchField: '',
-  category: '',
-  prefix: '',
+  numbers: [],
+  fields: {
+    name: '',
+    category: '',
+    prefix: ''
+  },
   fetchStatus: ''
 };
 
@@ -23,27 +23,22 @@ export default function reducer(state = initialState, action) {
     return {
       ...state,
       fetchStatus: `fetching... ${(new Date()).toLocaleString()}`,
-      list: []
+      numbers: []
     };
-  case CATEGORY:
+  case SEARCH_FIELD_UPDATED:
+    const fieldUpdate = action.payload;
+    const updatedFields = {
+      ...state.fields,
+      [fieldUpdate.name]: fieldUpdate.value
+    };
     return {
       ...state,
-      category: action.payload
-    };
-  case PREFIX:
-    return {
-      ...state,
-      prefix: action.payload
-    };
-  case SEARCH:
-    return {
-      ...state,
-      searchField: action.payload
+      fields: updatedFields
     };
   case NUMBERS_FETCH_FULFILLED:
     return {
       ...state,
-      list: action.payload,
+      numbers: action.payload,
       fetchStatus: `Results from ${(new Date()).toLocaleString()}`
     };
   case NUMBERS_FETCH_REJECTED:
