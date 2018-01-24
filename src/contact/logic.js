@@ -50,7 +50,12 @@ export const sendContactFormLogic = createLogic ({
     const currentState = getState();
     console.log(currentState, 'currentState');
     const fields = contactSel.fields(currentState);
-    httpClient.post('https://uk48h73c6c.execute-api.us-east-1.amazonaws.com/Zed/sendemail', fields)
+    const number = currentState.number.number.length ? currentState.number.number[0].name : '';
+    const data = {
+      ...fields,
+      number
+    }
+    httpClient.post('https://uk48h73c6c.execute-api.us-east-1.amazonaws.com/Zed/sendemail', data)
       .then(resp => resp.data)
       .then( message => dispatch(sendContactFormSuccess(message)))
       .catch( err => {
