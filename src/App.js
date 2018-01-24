@@ -1,19 +1,35 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import {
+  component as Contact,
+  selectors as contactSel,
+  actions as contactActions } from './contact/index';
+const { sendContactForm, contactFieldUpdates } = contactActions;
 
 import {
   component as Number,
   selectors as numberSel,
   actions as numberActions } from './number/index';
-
+const { numberFetch } = numberActions;
 
 import { component as Numbers,
          selectors as numbersSel,
          actions as numbersActions } from './numbers/index';
 const { numbersFetch, numbersFetchCancel, searchFieldFilled } = numbersActions;
-const { numberFetch } = numberActions;
 
 
+const CContact = connect(
+  state => ({
+    fields: contactSel.fields(state),
+    validationErrors: contactSel.errors(state),
+    fieldsValid: contactSel.valid(state),
+    message: contactSel.message(state)
+  }),
+  {
+    onSendContactForm: sendContactForm,
+    onContactFieldUpdates: contactFieldUpdates
+  }
+)(Contact)
 
 const CNumber = connect(
   state => ({
@@ -46,6 +62,7 @@ export function App({ number }) {
       <h1>Hello World</h1>
       <CNumbers />
       <CNumber />
+      <CContact />
       </div>)
   }
 
