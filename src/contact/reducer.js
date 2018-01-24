@@ -31,7 +31,6 @@ export default function reducer(state = initialState, action) {
     case CONTACT_FIELD_UPDATED:
       {
         const fieldUpdate = action.payload;
-        console.log(action.payload, 'action.payload name in contact field updated??!!~~~~~~~~~~~')
         const updatedFields = {
           ...state.fields,
           [fieldUpdate.name]: fieldUpdate.value
@@ -47,7 +46,6 @@ export default function reducer(state = initialState, action) {
     case CONTACT_FIELD_INVALID:
       {
         const {errors, fieldUpdate} = action.payload;
-        console.log(action.payload, 'action.payload name in invalid Contact field??!!~~~~~~~~~~~')
         const updatedFields = {
           ...state.fields,
           [fieldUpdate.name]: fieldUpdate.value

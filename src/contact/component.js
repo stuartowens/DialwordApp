@@ -11,7 +11,7 @@ export default function Contact({ fields, errors, valid, message, onContactField
         <div className="message"> { message }</div>
         <div className="error">
           <ul>
-            { errors ?  errors.map( error => { return<li key={error}>{error}</li>}) : console.log('no errors') }
+            { errors.length ?  errors.map( error => { return<li key={error}>{error}</li>}) : '' }
           </ul>
         </div>
         <label>First Name</label>

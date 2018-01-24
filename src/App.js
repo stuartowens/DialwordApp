@@ -21,7 +21,7 @@ const { numbersFetch, numbersFetchCancel, searchFieldFilled } = numbersActions;
 const CContact = connect(
   state => ({
     fields: contactSel.fields(state),
-    validationErrors: contactSel.errors(state),
+    errors: contactSel.errors(state),
     valid: contactSel.valid(state),
     message: contactSel.message(state),
     list: contactSel.messages(state)
