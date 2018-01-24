@@ -35,7 +35,6 @@ export const sendContactFormLogic = createLogic ({
   type: SEND_CONTACT_FORM,
   validate({getState, action}, allow, reject) {
     const currentState = getState();
-    console.log(currentState, 'currentState');
     const fields = contactSel.fields(currentState);
     const errors = validateFields(fields);
     if(!errors.length) {
@@ -46,7 +45,6 @@ export const sendContactFormLogic = createLogic ({
   },
   process({httpClient, getState }, dispatch, done) {
     const currentState = getState();
-    console.log(currentState, 'currentState');
     const fields = contactSel.fields(currentState);
     const number = currentState.number.number != null ? currentState.number.number[0].name : '';
     const data = {
