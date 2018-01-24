@@ -5,7 +5,8 @@ export const selectors = {
   fields: state => state[key].fields,
   errors: state => state[key].errors,
   valid: state => state[key].valid,
-  message: state => state[key].message
+  message: state => state[key].message,
+  messages: state => state[key].messages
 }
 
 const initialState = {
@@ -19,7 +20,10 @@ const initialState = {
     message: '',
     number: ''
   },
-errors: []
+  errors: [],
+  valid: false,
+  message: '',
+  messages: []
 }
 
 export default function reducer(state = initialState, action) {
@@ -27,6 +31,7 @@ export default function reducer(state = initialState, action) {
     case CONTACT_FIELD_UPDATED:
       {
         const fieldUpdate = action.payload;
+        console.log(action.payload, 'action.payload name in contact field updated??!!~~~~~~~~~~~')
         const updatedFields = {
           ...state.fields,
           [fieldUpdate.name]: fieldUpdate.value
@@ -42,6 +47,7 @@ export default function reducer(state = initialState, action) {
     case CONTACT_FIELD_INVALID:
       {
         const {errors, fieldUpdate} = action.payload;
+        console.log(action.payload, 'action.payload name in invalid Contact field??!!~~~~~~~~~~~')
         const updatedFields = {
           ...state.fields,
           [fieldUpdate.name]: fieldUpdate.value
@@ -71,15 +77,17 @@ export default function reducer(state = initialState, action) {
           },
           errors: [],
           valid: false,
-          message: `Message ${message} sent successfully`
+          message: `Message ${message} sent successfully`,
+          messages: state.messages.concat(message)
         }
+
       }
     case SEND_CONTACT_FORM_FAILED:
       {
         const err = action.payload;
         return {
           ...state,
-          errors: state.errors.concat(err.message),
+          errors: state.errors.concat(err),
           message: ''
         };
       }

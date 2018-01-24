@@ -26,17 +26,19 @@ export const contactFieldUpdates = (event) => ({
   }
 })
 
-export const contactFieldInvalid = (err) => ({
+export const contactFieldInvalid = (errors, fieldUpdate) => ({
   type: CONTACT_FIELD_INVALID,
-  payload: err,
-  error: true
+  payload: {
+    errors,
+    fieldUpdate
+  }
 })
 
 export const sendContactForm = (event) => {
   event.preventDefault();
   return {
     type: SEND_CONTACT_FORM,
-    payload: 'Contact form sending'  
+    payload: 'Contact form sending'
   }
 }
 

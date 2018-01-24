@@ -9,7 +9,6 @@ export function validateFields(fields) {
   if(!fields.email) { errors.push('Email is required'); }
   if (!fields.first_name) { errors.push('First name is required'); }
   if (!fields.last_name) { errors.push('Last name is required'); }
-  if(!fields.area) { errors.push('Area of interest is required'); }
   return errors;
 }
 
@@ -17,7 +16,6 @@ export const updateFieldsLogic = createLogic({
   type: CONTACT_FIELD_UPDATED,
   validate({ getState, action }, allow, reject) {
     const currentState = getState();
-    console.log(currentState, 'currentState');
     const fields = contactSel.fields(currentState);
     const fieldUpdate = action.payload;
     const updatedFields = {
@@ -50,12 +48,17 @@ export const sendContactFormLogic = createLogic ({
     const currentState = getState();
     console.log(currentState, 'currentState');
     const fields = contactSel.fields(currentState);
-    const number = currentState.number.number.length ? currentState.number.number[0].name : '';
+    const number = currentState.number.number != null ? currentState.number.number[0].name : '';
     const data = {
       ...fields,
       number
     }
-    httpClient.post('https://uk48h73c6c.execute-api.us-east-1.amazonaws.com/Zed/sendemail', data)
+    const email = {
+      "subject": "Contact Email Submisstion",
+      "emailTo": "homerowens@yahoo.com",
+      "form": [data]
+    }
+    httpClient.post('https://uk48h73c6c.execute-api.us-east-1.amazonaws.com/Zed/sendemail', email)
       .then(resp => resp.data)
       .then( message => dispatch(sendContactFormSuccess(message)))
       .catch( err => {

@@ -22,8 +22,9 @@ const CContact = connect(
   state => ({
     fields: contactSel.fields(state),
     validationErrors: contactSel.errors(state),
-    fieldsValid: contactSel.valid(state),
-    message: contactSel.message(state)
+    valid: contactSel.valid(state),
+    message: contactSel.message(state),
+    list: contactSel.messages(state)
   }),
   {
     onSendContactForm: sendContactForm,
