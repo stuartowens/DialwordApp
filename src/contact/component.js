@@ -4,7 +4,7 @@ export default function Contact({ fields, errors, valid, message, onContactField
 
   return (
     <div>
-      <h2>
+      <h2 className="main">
         Contact Form:
       </h2>
       <form onSubmit={ onSendContactForm }>

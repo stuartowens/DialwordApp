@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import './App.sass'
 import {
   component as Contact,
   selectors as contactSel,
@@ -60,7 +61,10 @@ const CNumbers = connect(
 export function App({ number }) {
   return (
       <div className="App">
-      <h1>Hello World</h1>
+      <h1 className="Hello">Hello World</h1>
+      <div className="div">
+        <h2>Go for it!</h2>
+      </div>
       <CNumbers />
       <CNumber />
       <CContact />
