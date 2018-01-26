@@ -55,7 +55,7 @@ module.exports = {
         query: require('./babel.dev')
       },
       {
-        test: /\.sass$/,
+        test: /\.scss$/,
         include: [paths.appSrc, paths.appNodeModules],
         loaders: ["style", "css", "sass"]
       },

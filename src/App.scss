@@ -1,0 +1,45 @@
+
+.App {
+  border: solid thick green;
+}
+@mixin carousel-animation($frames, $static, $animation-name: 'carousel'){
+  @if unitless($static){
+    $static: percentage($static);
+  }
+
+  $animating: (100% - $frames * $static)/ ($frames - 1);
+
+  @at-root{
+    @keyframes #{$animation-name} {
+      @for $i from 0 to $frames {
+        $current-frame: $i * $static + $i * $animating;
+        $next-frame: ($i + 1) * $static + $i * $animating;
+        $halfway-frame: $i * $static / 1% + ($i - 1) * $animating + $animating / 2;
+
+        @if $i > 0 {
+          #{$halfway-frame}{
+            filter: blur(2px);
+          }
+
+        }
+        #{$current-frame, $next-frame}{
+          transform: translateX($i * -100% / $frames);
+          filter: blur(0);
+        }
+      }
+    }
+  }
+}
+
+// @mixin cycleBackground($time,$background-array){
+//   @for $i from 0 to $background-array.length {
+//
+//   }
+// }
+
+// .zero {
+//   // @include carousel-animation(  $frames: 5, $static: 17.5%, $animation-name: "carousel_1");
+//   height: 700px;
+//   border: solid green thick;
+// }
+// @include carousel-animation(2, 17.5%, 'carousel_1')
