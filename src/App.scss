@@ -1,6 +1,18 @@
 
 .App {
   border: solid thick green;
+  border: solid green thick;
+  background-image:url("https://image.freepik.com/free-vector/business-background-design_1300-345.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 800px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: black;
+  text-align: center;
+  border: solid green thick;
 }
 @mixin carousel-animation($frames, $static, $animation-name: 'carousel'){
   @if unitless($static){
