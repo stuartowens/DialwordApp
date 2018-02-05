@@ -107,34 +107,34 @@ $mobile-featuring-background: url("../images/mobile/featuring_mobile.jpg");
   }
 }
 
-.Form {
-  width: 100%;
-  height: 45vw;
-  margin: 0;
-  padding: 0;
-  h2 {
-    margin-top: 0;
-    padding-top: 3vw;
-    font-size: 4.5vmax;
-  }
-  p {
-    font-size: 3.2vw;
-    color: darken(grey,10);
-    font-weight: 300;
-  }
-  input {
-    width: 27vmax;
-    height: 6vmax;
-    margin-bottom: 2vmax;
-    font-size: 2.5vmax;
-  }
-  button{
-    width: 85vw;
-    height: 12vw;
-    margin-bottom: 3vw;
-    font-size: 3.2vmax;
-  }
-}
+// .Form {
+//   width: 100%;
+//   height: 45vw;
+//   margin: 0;
+//   padding: 0;
+//   h2 {
+//     margin-top: 0;
+//     padding-top: 3vw;
+//     font-size: 4.5vmax;
+//   }
+//   p {
+//     font-size: 3.2vw;
+//     color: darken(grey,10);
+//     font-weight: 300;
+//   }
+//   input {
+//     width: 27vmax;
+//     height: 6vmax;
+//     margin-bottom: 2vmax;
+//     font-size: 2.5vmax;
+//   }
+//   button{
+//     width: 85vw;
+//     height: 12vw;
+//     margin-bottom: 3vw;
+//     font-size: 3.2vmax;
+//   }
+// }
 
 // @mixin cycleBackground($time,$background-array){
 //   @for $i from 0 to $background-array.length {

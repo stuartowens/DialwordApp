@@ -2,7 +2,6 @@ import React from 'react';
 import { connect } from 'react-redux';
 import './App.css';
 import './App.scss';
-import Zero from './Zero';
 import {
   component as Contact,
   selectors as contactSel,
@@ -63,7 +62,6 @@ const CNumbers = connect(
 export function App({ number }) {
   return (
       <div className="App" id="App">
-      <Zero />
       <h1 className="Hello">Hello World</h1>
       <div className="div">
         <h2>Go for it!</h2>
