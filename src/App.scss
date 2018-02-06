@@ -137,6 +137,100 @@ $mobile-featuring-background: url("../images/mobile/featuring_mobile.jpg");
   }
 }
 
+.Feature {
+  background-image: $featuring-background;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 50vmax;
+  justify-content: space-around;
+  @media only screen and (max-aspect-ratio: 16/9) {
+    background-image: $mobile-featuring-background;
+    align-items: center;
+    height: auto;
+  }
+}
+.lazy-feature {
+  background-image: $mobile-featuring-background;
+  @media screen and (min-width: 800px) {
+    background-image: $featuring-background;
+  }
+  background-size: cover;
+  h1 {
+    margin-top: 0;
+    font-size: 3vw;
+    width: 100vw;
+    padding-top: 4vw;
+    text-decoration: underline;
+    color: white;
+    text-align: center;
+  }
+  @media only screen and (max-aspect-ratio: 16/9) {
+    h1 {
+      font-size: 7.5vw;
+    }
+  }
+}
+
+//used an @for here to save some time on making a sepperate call for eatch item;
+
+
+@for $i from 1 through 7 {
+  #feature-#{$i} {
+    font-family: 'Roboto Slab';
+    color: white;
+    order: $i;
+    width: 20vw;
+    margin: 6vw;
+    margin-top:0;
+    margin-bottom:2vw;
+    text-align: center;
+    img {
+      width: 6vw;
+    }
+    @media only screen and (max-aspect-ratio: 16/9) {
+      width: 53vmax;
+      margin: 0;
+      font-size: 3vw;
+      img {
+        width: 18vw;
+      }
+    }
+   }
+}
+
+//I had to give the phone image some individual settings since it's so different
+
+#feature-3 {
+  img {
+    height: 35vw;
+    width: auto;
+  }
+  p {
+    font-size: .8vw;
+  }
+  @media only screen and (max-aspect-ratio: 16/9) {
+    order: 0;
+    img {
+      height: 45vmax;
+    }
+    p {
+      display:none
+    }
+  }
+}
+
+//The disclaimer which is at the bottom on the mobile version so it's hidden here
+
+#feature-6 {
+  display: none;
+  font-size: 1.8;
+  @media only screen and (max-aspect-ratio: 16/9) {
+    display: block;
+  }
+}
+
 // .Form {
 //   width: 100%;
 //   height: 45vw;
