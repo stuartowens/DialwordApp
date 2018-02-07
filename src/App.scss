@@ -407,7 +407,7 @@ $light-grey: #dcdcdc !global;
 //used an @for here to save some time on making a sepperate call for eatch item;
 
 
-@for $i from 1 through 7 {
+@for $i from 1 through 9 {
   #feature-#{$i} {
     font-family: 'Roboto Slab';
     color: white;
@@ -433,7 +433,7 @@ $light-grey: #dcdcdc !global;
 
 //I had to give the phone image some individual settings since it's so different
 
-#feature-3 {
+#feature-6 {
   img {
     height: 35vw;
     width: auto;
@@ -447,20 +447,20 @@ $light-grey: #dcdcdc !global;
       height: 45vmax;
     }
     p {
-      display:none
+      // display:none
     }
   }
 }
 
 //The disclaimer which is at the bottom on the mobile version so it's hidden here
 
-#feature-6 {
-  display: none;
-  font-size: 1.8;
-  @media only screen and (max-aspect-ratio: 16/9) {
-    display: block;
-  }
-}
+// #feature-6 {
+//   display: none;
+//   font-size: 1.8;
+//   @media only screen and (max-aspect-ratio: 16/9) {
+//     display: block;
+//   }
+// }
 
 
 
