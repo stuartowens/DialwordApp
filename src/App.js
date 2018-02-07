@@ -5,6 +5,7 @@ import './App.scss';
 import Dialword from './Dialword';
 import Faq from './Faq';
 import Tips from './Tips';
+import Footer from './Footer';
 import How from './How';
 import {
   component as Contact,
@@ -73,6 +74,7 @@ export function App({ number }) {
         <CNumbers />
         <CNumber />
         <CContact />
+        <Footer />
       </div>)
   }
 
