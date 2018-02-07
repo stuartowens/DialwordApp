@@ -363,7 +363,7 @@ $light-grey: #dcdcdc !global;
   }
 }
 
-.Feature {
+.Tips {
   // background-image: $featuring-background;
   // background-color: blue;
   background-size: cover;
@@ -379,7 +379,7 @@ $light-grey: #dcdcdc !global;
     height: auto;
   }
 }
-.lazy-feature {
+.lazy-tip {
   // background-image: $mobile-featuring-background;
   background-color: green;
   @media screen and (min-width: 800px) {
@@ -407,7 +407,7 @@ $light-grey: #dcdcdc !global;
 
 
 @for $i from 1 through 9 {
-  #feature-#{$i} {
+  #tip-#{$i} {
     font-family: 'Roboto Slab';
     color: white;
     order: $i;
@@ -669,8 +669,8 @@ $parallax-ios : true !default;
       left:0;
       right:0;
       bottom: 0;
-      width: 25vmax;
-      height: 15vmax;
+      width: 55vmax;
+      height: 25vmax;
     }
     p {
       vertical-align: middle;
@@ -702,8 +702,8 @@ $parallax-ios : true !default;
       left: 0;
       right: 0;
       bottom: 0;
-      width: 25vmax;
-      height: 15vmax;
+      width: 55vmax;
+      height: 25vmax;
     }
     p {
       vertical-align: middle;
