@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import './App.css';
 import './App.scss';
 import Dialword from './Dialword';
+import Faq from './Faq';
 import {
   component as Contact,
   selectors as contactSel,
@@ -64,6 +65,7 @@ export function App({ number }) {
   return (
       <div className="App" id="App">
         <Dialword />
+        <Faq />
         <CNumbers />
         <CNumber />
         <CContact />
