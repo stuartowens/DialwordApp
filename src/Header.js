@@ -10,7 +10,7 @@ class Header extends React.Component {
     return (
         <div className="Header">
           {/* <img src={Logo} /> */}
-          <p>To speak with an<br />admissions advisor call <a>(555)123-4567</a></p>
+          <p>To speak with a<br />sales representative, call <a>(800)263-9693</a></p>
         </div>
       )
   }
