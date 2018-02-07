@@ -3,22 +3,21 @@ $blue: #38bcdb !global;
 $blue-hover: #2e91a3 !global;
 $grey: #a9aaab !global;
 $light-grey: #dcdcdc !global;
-$code-background: url("../images/code_hero.jpg");
-$data-background: url("../images/data_hero.jpg");
-$faq-background: url("../images/faq.jpg");
-$about-background: url("../images/about.jpg");
-$featuring-background: url("../images/featuring.jpg");
-$mobile-code-background: url("../images/mobile/code_mobile_hero.jpg");
-$mobile-data-background: url("../images/mobile/data_mobile_hero.jpg");
-$mobile-about-background: url("../images/mobile/about_mobile.jpg");
-$mobile-faq-background: url("../images/mobile/faq_mobile.jpg");
-$mobile-featuring-background: url("../images/mobile/featuring_mobile.jpg");
+// $code-background: url("../images/code_hero.jpg");
+// $data-background: url("../images/data_hero.jpg");
+// $faq-background: url("../images/faq.jpg");
+// $about-background: url("../images/about.jpg");
+// $featuring-background: url("../images/featuring.jpg");
+// $mobile-code-background: url("../images/mobile/code_mobile_hero.jpg");
+// $mobile-data-background: url("../images/mobile/data_mobile_hero.jpg");
+// $mobile-about-background: url("../images/mobile/about_mobile.jpg");
+// $mobile-faq-background: url("../images/mobile/faq_mobile.jpg");
+// $mobile-featuring-background: url("../images/mobile/featuring_mobile.jpg");
 
 
 
 .App {
   border: solid thick green;
-  border: solid green thick;
   background-image:url("https://image.freepik.com/free-vector/business-background-design_1300-345.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -60,15 +59,16 @@ $mobile-featuring-background: url("../images/mobile/featuring_mobile.jpg");
   }
 }
 
-.Form {
+.Contact {
   order: 4;
   width: 25vmax;
-  height: 10.5vmax;
+  height: 12.9vmax;
   margin-right: 8vmax;
   margin-left: 4vmax;
   margin-bottom: 3vmax;
   text-align: center;
   background-color: rgba(220,220,220,.85);
+  // border: solid blue thick;
   border-radius: 5px;
   h2 {
     margin-top: 5px;
@@ -87,6 +87,78 @@ $mobile-featuring-background: url("../images/mobile/featuring_mobile.jpg");
     text-align: center;
     font-size: 1.5vmax;
     width: 9vmax;
+    margin-left: 10px;
+    margin-bottom: .3vw;
+    padding-top: .6vw;
+    padding-bottom: .6vw;
+  }
+  select {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+    text-align: center;
+    font-size: 1.5vmax;
+    width: 6vmax;
+    margin-left: 10px;
+    margin-bottom: .3vw;
+  }
+  button {
+    color: white;
+    font-size: 1.8vmax;
+    font-weight: bold;
+    border-radius: 6px;
+    background-color: $blue;
+    width: 24vmax;
+    height: 2.7vmax;
+    margin-bottom: 0;
+  }
+  button:hover {
+    color: white;
+    background-color: $blue-hover;
+
+  }
+}
+
+.Form {
+  order: 4;
+  width: 25vmax;
+  height: 8.5vmax;
+  margin-right: 8vmax;
+  margin-left: 4vmax;
+  margin-bottom: 3vmax;
+  text-align: center;
+  background-color: rgba(220,220,220,.85);
+  // border: solid blue thick;
+  border-radius: 5px;
+  h2 {
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-size: 2vmax;
+    font-weight: bold;
+  }
+  p {
+    margin-bottom:0;
+    font-size: .95vw;
+  }
+  input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+    text-align: center;
+    font-size: 1.5vmax;
+    width: 9vmax;
+    margin-left: 10px;
+    margin-bottom: .3vw;
+    padding-top: .6vw;
+    padding-bottom: .6vw;
+  }
+  select {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+    text-align: center;
+    font-size: 1.5vmax;
+    width: 6vmax;
     margin-left: 10px;
     margin-bottom: .3vw;
   }
@@ -138,7 +210,8 @@ $mobile-featuring-background: url("../images/mobile/featuring_mobile.jpg");
 }
 
 .Feature {
-  background-image: $featuring-background;
+  // background-image: $featuring-background;
+  // background-color: blue;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -146,15 +219,18 @@ $mobile-featuring-background: url("../images/mobile/featuring_mobile.jpg");
   height: 50vmax;
   justify-content: space-around;
   @media only screen and (max-aspect-ratio: 16/9) {
-    background-image: $mobile-featuring-background;
+    // background-image: $mobile-featuring-background;
+    background-color: grey;
     align-items: center;
     height: auto;
   }
 }
 .lazy-feature {
-  background-image: $mobile-featuring-background;
+  // background-image: $mobile-featuring-background;
+  background-color: green;
   @media screen and (min-width: 800px) {
-    background-image: $featuring-background;
+    // background-image: $featuring-background;
+    background-color: grey;
   }
   background-size: cover;
   h1 {

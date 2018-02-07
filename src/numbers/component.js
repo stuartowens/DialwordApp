@@ -4,16 +4,16 @@ export default function Numbers({ numbers, fetchStatus, onFetch,
                                 onCancelFetch, onSearchFieldFilled, onFetchNumber }) {
   return (
     <div>
-      <form >
+      <form className="Form">
         <div>Status: { fetchStatus }</div>
-        <select name="prefix" size="5" autoFocus="true"  onChange={ onSearchFieldFilled }>
+        <select name="prefix"  autoFocus="true"  onChange={ onSearchFieldFilled }>
           <option value="">Any</option>
           <option value="800">800</option>
           <option value="888">888</option>
           <option value="877">877</option>
           <option value="866">866</option>
         </select>
-        <select name="category" size="5" autoFocus="true" onChange={ onSearchFieldFilled }>
+        <select name="category" autoFocus="true" onChange={ onSearchFieldFilled }>
           <option value="">Any</option>
           <option value="Medical">Doctors</option>
           <option value="Bailbonds">Bailbonds</option>
@@ -23,18 +23,20 @@ export default function Numbers({ numbers, fetchStatus, onFetch,
         <input type="text" autoFocus="true" name="name" onChange={ onSearchFieldFilled } />
         <button onClick={ onCancelFetch }>Cancel</button>
       </form>
-      <ul>
+      <div className="Feature">
+        <ul>
           {numbers.map(number => {
-      return <div>
+            return <div>
               <li key={ number._id }>
-                <h3>Number: {number.number}</h3>
+                <h3 >Number: {number.number}</h3>
                 <button onClick={ () => onFetchNumber(number.name) } >
                   { number.name }
                 </button>
               </li>
             </div>
           })}
-      </ul>
+        </ul>
+      </div>
     </div>
   );
 }
