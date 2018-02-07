@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import './App.css';
 import './App.scss';
 import Dialword from './Dialword';
+import DialwordMobile from './DialwordMobile';
 import Faq from './Faq';
 import Tips from './Tips';
 import Footer from './Footer';
@@ -68,6 +69,7 @@ export function App({ number }) {
   return (
       <div className="App" id="App">
         <Dialword />
+        <DialwordMobile />
         <How />
         <Tips />
         <Faq />

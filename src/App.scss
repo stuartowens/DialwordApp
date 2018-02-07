@@ -3,13 +3,13 @@ $blue: #38bcdb !global;
 $blue-hover: #2e91a3 !global;
 $grey: #a9aaab !global;
 $light-grey: #dcdcdc !global;
-// $code-background: url("../images/code_hero.jpg");
-// $data-background: url("../images/data_hero.jpg");
+// $code-background: url("../images/code_Dialword.jpg");
+// $data-background: url("../images/data_Dialword.jpg");
 // $faq-background: url("../images/faq.jpg");
 // $about-background: url("../images/about.jpg");
 // $featuring-background: url("../images/featuring.jpg");
-// $mobile-code-background: url("../images/mobile/code_mobile_hero.jpg");
-// $mobile-data-background: url("../images/mobile/data_mobile_hero.jpg");
+// $mobile-code-background: url("../images/mobile/code_mobile_Dialword.jpg");
+// $mobile-data-background: url("../images/mobile/data_mobile_Dialword.jpg");
 // $mobile-about-background: url("../images/mobile/about_mobile.jpg");
 // $mobile-faq-background: url("../images/mobile/faq_mobile.jpg");
 // $mobile-featuring-background: url("../images/mobile/featuring_mobile.jpg");
@@ -17,8 +17,7 @@ $light-grey: #dcdcdc !global;
 
 
 .App {
-  border: solid thick green;
-  background-image:url("https://image.freepik.com/free-vector/business-background-design_1300-345.jpg");
+  // background-image:url("https://image.freepik.com/free-vector/business-background-design_1300-345.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
@@ -28,7 +27,6 @@ $light-grey: #dcdcdc !global;
   padding: 0;
   color: black;
   text-align: center;
-  border: solid green thick;
 }
 @mixin carousel-animation($frames, $static, $animation-name: 'carousel'){
   @if unitless($static){
@@ -64,7 +62,7 @@ $light-grey: #dcdcdc !global;
 }
 //Setting the backgrounds based on screen width, later on I used aspect ratio almost exclusively
 // I might return to this @media setting instead
-#Hero_code {
+#Dialword_code {
   // background-image: $mobile-code-background;
   background-color: grey;
   @media screen and (min-width: 800px) {
@@ -72,7 +70,7 @@ $light-grey: #dcdcdc !global;
     background-color: grey;
   }
 }
-#Hero_data {
+#Dialword_data {
   // background-image: $mobile-data-background;
   background-color: grey;
   @media screen and (min-width: 800px) {
@@ -82,19 +80,19 @@ $light-grey: #dcdcdc !global;
 }
 
 
-//Set the Hero component up to be a flex container and hero mobile container to not be displayed
-.Hero {
+//Set the Dialword component up to be a flex container and Dialword mobile container to not be displayed
+.Dialword {
   background-size: cover;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.Hero-Mobile {
+.Dialword-Mobile {
   display: none;
 }
 
-#Hero_mobile_code {
+#Dialword_mobile_code {
   background-size: cover;
   // background-image: $mobile-data-background;
   background-color: grey;
@@ -179,7 +177,7 @@ $light-grey: #dcdcdc !global;
   }
 }
 
-//I change the content of these using the function from HeroContent but there is a flash, if I had more time I'd like to
+//I change the content of these using the function from Dialword Content but there is a flash, if I had more time I'd like to
 //to set the content to move up and change color. But I would also like some more clarification on what was being asked for here.
 //The instructions were not clear if there was supposed to be a transition effect where the content litterally moves up
 //or if the content can just be switched out. Also it wasn't specified where the style changes were supposed to take effect
@@ -582,7 +580,7 @@ $parallax-ios : true !default;
 
 
 
-.Story {
+.How {
   // @include parallax-init();
   // background-image: $about-background;
   background-color: darkblue;
@@ -652,6 +650,355 @@ $parallax-ios : true !default;
     }
   }
 }
+
+@media only screen and (max-aspect-ratio: 16/9) {
+  .Dialword {
+    display: none;
+  }
+  .Header {
+    height: 35vmax;
+    position: relative;
+    background-color: black;
+    opacity: .90;
+    img {
+      vertical-align: middle;
+      margin : auto;
+      position : absolute;
+      top:0;
+      bottom:0;
+      left:0;
+      right:0;
+      bottom: 0;
+      width: 25vmax;
+      height: 15vmax;
+    }
+    p {
+      vertical-align: middle;
+      margin : auto;
+      margin-bottom:5vw;
+      position : absolute;
+      top:25vw;
+      bottom:0;
+      left:0;
+      right:0;
+      width: 74vmax;
+      font-size: 3.5vmax;
+      text-align: center;
+    }
+  }
+  .Footer {
+    height: 65vmax;
+    width: 100vw;
+    position: relative;
+    background-color: $blue;
+    margin-top: 10vw;
+    img {
+      vertical-align: middle;
+      margin: auto;
+      margin-top: 5vw;
+      position: absolute;
+      top: 0;
+      bottom: 60vw;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 25vmax;
+      height: 15vmax;
+    }
+    p {
+      vertical-align: middle;
+      margin: auto;
+      margin-bottom:5vw;
+      position: absolute;
+      top: 40vw;
+      bottom: 0;
+      left:0;
+      right:0;
+      width: 54vmax;
+      font-size: 3vmax;
+      text-align: center;
+    }
+  }
+  .Dialword_mobile_code {
+    height: 50vmax;
+  }
+  .Dialword-Mobile {
+    display: flex;
+    vertical-align: middle;
+    margin: auto;
+    flex-direction: column;
+  }
+  .Learn-Heading {
+    vertical-align: middle;
+    margin: auto;
+    position: relative;
+    margin-bottom: 6vw;
+    height: 20vmax;
+    h1 {
+      margin : auto;
+      position : relative;
+      top:9vw;
+      bottom:0;
+      left:0;
+      right:0;
+      vertical-align: middle;
+      color: white;
+      // width: 45vmax;
+      font-size: 6.5vw;
+      text-align: center;
+    }
+    p {
+      vertical-align: middle;
+      margin : auto;
+      position : relative;
+      top:12vw;
+      bottom:0;
+      left:0;
+      right:0;
+      color: white;
+      width: 75vmax;
+      font-size: 4vw;
+      text-align: center;
+    }
+  }
+  .Data-Content {
+    height: 25vmax;
+    position: relative;
+    margin-top: 5vmax;
+    margin-bottom: 10vmax;
+    p {
+      border-top: solid $blue thick;
+      border-top-width: 10px;
+      padding-top: 3vw;
+      vertical-align: middle;
+      margin : auto;
+      position : absolute;
+      top:3vw;
+      bottom:0;
+      left:0;
+      right:0;
+      color: white;
+      width: 75vmax;
+      font-size: 4vw;
+      text-align: center;
+    }
+  }
+  .Data-Content:after {
+    font-family:'FontAwesome';
+    font-size: 6vw;
+    content:"\f054";
+    float: right;
+    color: white;
+  }
+  .Data-Content:before {
+    font-family:'FontAwesome';
+    font-size: 6vw;
+    content:"\f053";
+    float: left;
+    color: white;
+  }
+  .Header {
+    width: 100vw;
+  }
+  .Form {
+    width: 100%;
+    height: 45vw;
+    margin: 0;
+    padding: 0;
+    h2 {
+      margin-top: 0;
+      padding-top: 3vw;
+      font-size: 4.5vmax;
+    }
+    p {
+      font-size: 3.2vw;
+      color: darken(grey,10);
+      font-weight: 300;
+    }
+    input {
+      width: 27vmax;
+      height: 6vmax;
+      margin-bottom: 2vmax;
+      font-size: 2.5vmax;
+    }
+    button{
+      width: 85vw;
+      height: 12vw;
+      margin-bottom: 3vw;
+      font-size: 3.2vmax;
+    }
+  }
+  .Contact {
+    width: 100%;
+    height: 45vw;
+    margin: 0;
+    padding: 0;
+    h2 {
+      margin-top: 0;
+      padding-top: 3vw;
+      font-size: 4.5vmax;
+    }
+    p {
+      font-size: 3.2vw;
+      color: darken(grey,10);
+      font-weight: 300;
+    }
+    input {
+      width: 27vmax;
+      height: 6vmax;
+      margin-bottom: 2vmax;
+      font-size: 2.5vmax;
+    }
+    button{
+      width: 85vw;
+      height: 12vw;
+      margin-bottom: 3vw;
+      font-size: 3.2vmax;
+    }
+  }
+  .How {
+    // background-image: $mobile-about-background;
+    background-color: grey;
+    min-height: 1000px;
+    h1 {
+      font-size: 8vmax;
+    }
+    p {
+      font-size: 5.5vmax;
+    }
+  }
+  .Faq {
+    min-height:1200px;
+    padding-bottom: 60vw;
+  }
+  .faq-questions {
+    max-width: 80vmax;
+    width: 80vmax;
+    overflow: scroll;
+    vertical-align: middle;
+    margin: auto;
+    position: relative;
+    top:3vw;
+    bottom:0;
+    left:0;
+    right:0;
+    padding: 4vmax;
+    h1 {
+      font-size: 8vw;
+      text-align: center;
+      // line-height: 6vmax;
+      margin: 3vmax;
+    }
+  }
+  .Collapsible {
+    vertical-align: middle;
+    width: 85vmax;
+    // margin: 3vmax;
+    max-width: inherit;
+    // overflow: hidden;
+    span {
+      max-width: inherit;
+      font-size: 3.5vw;
+      padding: 2vw;
+    }
+  }
+  .Collapsible__contentOuter {
+    margin: 3vmax;
+    max-width: inherit;
+    li {
+      max-width: inherit;
+      font-size: 3vw;
+      padding: 1.5vw;
+    }
+  }
+  span.Collapsible__trigger {
+    max-width: 75vmax;
+    // overflow: hidden;
+  }
+  .Collapsible__trigger.is-closed:before {
+    font-size: 3vw;
+
+  }
+  .Collapsible__trigger:before {
+    font-size: 3vw;
+  }
+}
+
+//This is kind of my hack version of a carousel, I looked at using another carousel but it seemed a little overkill
+//I also wonder if it would be ok to incorporate a carousel from bootstrap framework.
+//My only regret here would be putting the on click on the entire paragraph element on the bottom and again not having
+// the exact icons but I was again able to use fontAwesome icons that look similar.
+//I would  incorporate a more traditional carousel here for sure if there were more items to shift through
+//but since we only needed to switch between two items I simply put them facing opposite directions then
+//then I flip the card by puttng a class on the element in an onClick funciton found in the DialwordMobile component.
+
+
+.card {
+	-webkit-transition: -webkit-transform .5s;
+	-moz-transition: -moz-transform .5s;
+	-o-transition: -o-transform .5s;
+	transition: transform .5s;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	position: relative;
+  width: 100vw;
+  height: auto;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	backface-visibility: hidden;
+	position: absolute;
+  // background-image: $mobile-data-background;
+  background-color: grey;
+  background-size: cover;
+  // border: solid thick green;
+	// background-color: black;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.14);
+  width: 100vw;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+  // background-image: $mobile-code-background;
+  background-color: grey;
+  // border: solid thick red;
+
+}
+
+/* back, initially hidden pane */
+.back {
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+	z-index: 3;
+}
+
+.card-container {
+	-webkit-perspective: 800px;
+	-moz-perspective: 800px;
+	-o-perspective: 800px;
+	perspective: 800px;
+	margin-bottom: 30px;
+  z-index: 0;
+  // border: thick purple solid;
+  height: 57vw;
+}
+/* flip the pane when hovered */
+.card-container.flip {
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
 
 // .Form {
 //   width: 100%;

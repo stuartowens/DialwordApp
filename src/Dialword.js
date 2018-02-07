@@ -37,11 +37,11 @@ class Dialword extends React.Component {
   render() {
     return (
         <div>
-          <div className="Hero" id="Hero_code">
+          <div className="Dialword" id="Dialword_code">
             <Header />
             <CContact />
             <div className="Learn-Head">
-              <h1>Dialword<br /></h1>
+              <h1>1800Dialword<br /></h1>
               <p>Get a Premium Vanity Number</p>
             </div>
             <div className="Top-Content">
