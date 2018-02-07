@@ -3,11 +3,8 @@ import React from 'react';
 export default function Contact({ fields, errors, valid, message, onContactFieldUpdates, onSendContactForm }) {
 
   return (
-    <div>
-      <h2 className="main">
-        Contact Form:
-      </h2>
-      <form className="Contact" onSubmit={ onSendContactForm }>
+    <div className="Contact">
+      <form  onSubmit={ onSendContactForm }>
         <div className="message"> { message }</div>
         <div className="error">
           <ul>

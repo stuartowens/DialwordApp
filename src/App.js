@@ -63,14 +63,10 @@ const CNumbers = connect(
 export function App({ number }) {
   return (
       <div className="App" id="App">
-      <h1 className="Hello">Hello World</h1>
-      <div className="div">
-        <h2>Go for it!</h2>
-      </div>
-      <Dialword />
-      <CNumbers />
-      <CNumber />
-      <CContact />
+        <Dialword />
+        <CNumbers />
+        <CNumber />
+        <CContact />
       </div>)
   }
 

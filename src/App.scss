@@ -22,7 +22,7 @@ $light-grey: #dcdcdc !global;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
-  height: 800px;
+  // height: 800px;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -69,7 +69,7 @@ $light-grey: #dcdcdc !global;
   background-color: grey;
   @media screen and (min-width: 800px) {
     // background-image: $code-background;
-    background-color: white;
+    background-color: grey;
   }
 }
 #Hero_data {
@@ -77,7 +77,7 @@ $light-grey: #dcdcdc !global;
   background-color: grey;
   @media screen and (min-width: 800px) {
     // background-image: $data-background;
-    background-color: white;
+    background-color: grey;
   }
 }
 
@@ -153,17 +153,78 @@ $light-grey: #dcdcdc !global;
   }
 }
 
+.Top-Content {
+  order: 3;
+  width: 28vmax;
+  margin-right: 7vmax;
+  margin-top: 3vmax;
+  text-align: right;
+  h2 {
+    font-size: 1.7vmax;
+    color: #38bcbd;
+    margin-bottom: .3vw;
+  }
+  p {
+    color: white;
+    font-size: 1.2vw;
+    font-weight: 200;
+    margin-bottom: 0;
+    margin-top: 0;
+    border-bottom: solid $blue-hover thick;
+  }
+  h1 {
+    color: #38bcbd;
+    font-style: oblique;
+    margin-top: 0;
+  }
+}
+
+//I change the content of these using the function from HeroContent but there is a flash, if I had more time I'd like to
+//to set the content to move up and change color. But I would also like some more clarification on what was being asked for here.
+//The instructions were not clear if there was supposed to be a transition effect where the content litterally moves up
+//or if the content can just be switched out. Also it wasn't specified where the style changes were supposed to take effect
+
+
+
+.Bottom-Content {
+  order: 5;
+  width: 28vmax;
+  margin-right: 7vmax;
+  margin-bottom: 3vmax;
+  text-align: right;
+  h2 {
+    font-size: 1.7vmax;
+    color: white;
+    margin-bottom: .3vw;
+  }
+  p {
+    color: white;
+    font-size: 1.2vw;
+    font-weight: 200;
+    margin-bottom: 0;
+    margin-top: 0;
+    border-bottom: solid white thick;
+  }
+  h1 {
+    color: white;
+    font-style: oblique;
+    margin-top: 0;
+  }
+}
+
+
+
 .Contact {
   order: 4;
   width: 25vmax;
-  height: 12.9vmax;
+  height: 14.9vmax;
   margin-right: 8vmax;
   margin-left: 4vmax;
   margin-bottom: 3vmax;
   text-align: center;
   background-color: rgba(220,220,220,.85);
   // border: solid blue thick;
-  border-radius: 5px;
+  border-radius: 10px;
   h2 {
     margin-top: 5px;
     margin-bottom: 0;
@@ -214,7 +275,7 @@ $light-grey: #dcdcdc !global;
 }
 
 .Form {
-  order: 4;
+  // order: 4;
   width: 25vmax;
   height: 8.5vmax;
   margin-right: 8vmax;

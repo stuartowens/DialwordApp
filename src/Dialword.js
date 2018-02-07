@@ -2,13 +2,27 @@ import React from 'react';
 // import './app.scss';
 // import Form from './Form.jsx';
 import Header from './Header';
+import { connect } from 'react-redux';
 
-//Here I use the function from HeroContent to change the background Image every five seconds
-//The only issue here is that it is flashing upon loading the first few times it moves back and forth
-//This is most likely due to the way I am changing the content. I'd like to find a better way to do this
-//in the css using a mixin.
-//Like I said in the CSS file the instrucitons weren't completely clear on what kind of transition wanted
-//for the paragraph element, ie if it's literally supposed to move up or if it can simply change the content
+import {
+  component as Contact,
+  selectors as contactSel,
+  actions as contactActions } from './contact/index';
+const { sendContactForm, contactFieldUpdates } = contactActions;
+
+const CContact = connect(
+  state => ({
+    fields: contactSel.fields(state),
+    errors: contactSel.errors(state),
+    valid: contactSel.valid(state),
+    message: contactSel.message(state),
+    list: contactSel.messages(state)
+  }),
+  {
+    onSendContactForm: sendContactForm,
+    onContactFieldUpdates: contactFieldUpdates
+  }
+)(Contact)
 
 class Dialword extends React.Component {
   constructor(props){
@@ -25,8 +39,9 @@ class Dialword extends React.Component {
         <div>
           <div className="Hero" id="Hero_code">
             <Header />
+            <CContact />
             <div className="Learn-Head">
-              <h1>Learn Coding<br /> in 24 Weeks</h1>
+              <h1>Get a Premium<br /> Vanity Number</h1>
               <p>Class starts May 15, 2018</p>
             </div>
             <div className="Top-Content">
