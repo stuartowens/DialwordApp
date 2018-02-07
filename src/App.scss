@@ -59,6 +59,100 @@ $light-grey: #dcdcdc !global;
   }
 }
 
+.App {
+  font-family: 'Roboto';
+}
+//Setting the backgrounds based on screen width, later on I used aspect ratio almost exclusively
+// I might return to this @media setting instead
+#Hero_code {
+  // background-image: $mobile-code-background;
+  background-color: grey;
+  @media screen and (min-width: 800px) {
+    // background-image: $code-background;
+    background-color: white;
+  }
+}
+#Hero_data {
+  // background-image: $mobile-data-background;
+  background-color: grey;
+  @media screen and (min-width: 800px) {
+    // background-image: $data-background;
+    background-color: white;
+  }
+}
+
+
+//Set the Hero component up to be a flex container and hero mobile container to not be displayed
+.Hero {
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.Hero-Mobile {
+  display: none;
+}
+
+#Hero_mobile_code {
+  background-size: cover;
+  // background-image: $mobile-data-background;
+  background-color: grey;
+}
+ //Here the header and Headings are placed in order and sized accordingly
+.Header {
+  order:1;
+  height: 7vmax;
+  width: 100vmax;
+  background-color: rgba(0,0,0,.8);
+  img {
+    left: 5;
+    position: absolute;
+    height: 5vmax;
+    margin-left: 5vmax;
+    margin-bottom: 1vmax;
+    padding: 1vmax;
+  }
+  p {
+    font-family: 'Roboto';
+    font-style: normal;
+    right: 0;
+    width: 30vmax;
+    font-size: .9vmax;
+    color: #dcdcdc;
+    position: absolute;
+    text-align:right;
+    padding-right: 2vmax;
+    padding-top: 2vmax;
+    a {
+      color: #38bcbd;
+    }
+  }
+}
+
+.Learn-Head {
+  order: 2;
+  font-family: 'Roboto';
+  font-weight: bold;
+  color: black;
+  width: 25vmax;
+  margin-left: 4vmax;
+  margin-top: 3vmax;
+  text-align: left;
+  padding: 10px;
+  h1 {
+    font-size: 4vw;
+    font-weight: bold;
+    margin-bottom:0;
+  }
+  p {
+    font-size: 2vw;
+    margin-top: 0;
+    font-family: 'Roboto Slab';
+    font-weight: lighter;
+  }
+}
+
 .Contact {
   order: 4;
   width: 25vmax;
