@@ -1,5 +1,5 @@
 import React from 'react';
-import './app.scss';
+// import './app.scss';
 // var phone = require('../images/phone.png')
 // var completeProjIcon = require('../images/icons/complete_proj.svg');
 // var benefitIcon = require('../images/icons/benefit.svg');

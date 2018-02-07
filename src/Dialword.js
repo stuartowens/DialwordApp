@@ -42,7 +42,7 @@ class Dialword extends React.Component {
             <CContact />
             <div className="Learn-Head">
               <h1>Dialword<br /></h1>
-              <p>Get a Premium Vanity Numbers</p>
+              <p>Get a Premium Vanity Number</p>
             </div>
             <div className="Top-Content">
               <h2 id="Top-Content-H">GET MORE BUSINESS</h2>

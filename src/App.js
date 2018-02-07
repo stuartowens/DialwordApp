@@ -4,6 +4,8 @@ import './App.css';
 import './App.scss';
 import Dialword from './Dialword';
 import Faq from './Faq';
+import Tips from './Tips';
+import How from './How';
 import {
   component as Contact,
   selectors as contactSel,
@@ -65,6 +67,8 @@ export function App({ number }) {
   return (
       <div className="App" id="App">
         <Dialword />
+        <How />
+        <Tips />
         <Faq />
         <CNumbers />
         <CNumber />
