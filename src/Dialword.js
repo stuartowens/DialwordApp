@@ -41,16 +41,16 @@ class Dialword extends React.Component {
             <Header />
             <CContact />
             <div className="Learn-Head">
-              <h1>Get a Premium<br /> Vanity Number</h1>
-              <p>Class starts May 15, 2018</p>
+              <h1>Dialword<br /></h1>
+              <p>Get a Premium Vanity Numbers</p>
             </div>
             <div className="Top-Content">
-              <h2 id="Top-Content-H">CODING</h2>
-              <p id="Top-Content-P">Coding Boot Camp equips students skills for full-stack web development through <br /> dynamic, in-person classes.</p>
+              <h2 id="Top-Content-H">GET MORE BUSINESS</h2>
+              <p id="Top-Content-P">Gain Clients, Increase Your Sales and Boost Your Profits! <br /> dynamic, in-person classes. vanity numbers are memorable, they attract attention, they are literally the call to action</p>
             </div>
             <div className="Bottom-Content">
-              <h2 id="Bottom-Content-H">DATA ANALYTICS</h2>
-              <p id="Bottom-Content-P">Data Boot Camp equips students with the key skills for full-stack web development<br /> through dynamic, in-person classes.</p>
+              <h2 id="Bottom-Content-H">EASY TO REMEMBER</h2>
+              <p id="Bottom-Content-P">Since people remember words easier than numbers, including a toll free vanity number in all of your advertising greatly increases a consumer's ability to remember how to reach you.</p>
             </div>
             {/* <Form /> */}
           </div>
