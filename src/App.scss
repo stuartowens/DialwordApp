@@ -943,8 +943,52 @@ $parallax-ios : true !default;
       font-size: 8vmax;
     }
     p {
-      font-size: 1.5vmax;
+      font-size: 4.5vmax;
       top: 55vw;
+    }
+    h1.HPremium {
+      @include parallax(.1);
+      width: 75vw;
+      top:3vw;
+      bottom:0;
+      left:0;
+      right:0;
+      color: $blue;
+    }
+    p.Premium {
+      @include parallax(.2);
+      width: 75vw;
+      top:18vw;
+      bottom:0;
+      left:0;
+      right:0;
+    }
+    p.Effective {
+      display: none;
+    }
+    p.Example {
+      display: none;
+    }
+    p.Rights {
+      display: none;
+    }
+    p.Area {
+      display: none;
+    }
+    p.Exclude {
+      display: none;
+    }
+    p.Consultants {
+      display: none;
+    }
+    p.Exclude {
+      display: none;
+    }
+    p.Participate {
+      display: none;
+    }
+    p.Area {
+      display: none;
     }
   }
   .Faq {
