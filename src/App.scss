@@ -433,7 +433,7 @@ $light-grey: #dcdcdc !global;
         width: 53vw;
       }
       h2 {
-        width: 18vw;
+        width: 53vmax;
         font-size: 4.4vw;
       }
     }
@@ -476,7 +476,7 @@ $light-grey: #dcdcdc !global;
 .Faq {
   background-color: grey;
   background-size: cover;
-  height: 45vw;
+  height: 55vw;
   h1 {
     margin-top: 0;
     padding-top: 5vw;
@@ -494,6 +494,7 @@ $light-grey: #dcdcdc !global;
 .faq-questions {
   width: 40vw;
   margin-left: 10vw;
+  text-align: left;
   a {
     text-decoration: none;
   }
@@ -547,6 +548,7 @@ $light-grey: #dcdcdc !global;
     max-width: inherit;
     font-family: 'Roboto Slab';
     font-size: 1vw;
+    text-align: left;
   }
 }
 
