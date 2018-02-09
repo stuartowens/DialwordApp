@@ -419,12 +419,22 @@ $light-grey: #dcdcdc !global;
     img {
       width: 6vw;
     }
+    h2 {
+      width: 20vw;
+      font-size: 1.4vw;
+      text-align: center;
+      color: $blue;
+    }
     @media only screen and (max-aspect-ratio: 16/9) {
       width: 53vmax;
       margin: 0;
       font-size: 3vw;
       img {
+        width: 53vw;
+      }
+      h2 {
         width: 18vw;
+        font-size: 4.4vw;
       }
     }
    }
