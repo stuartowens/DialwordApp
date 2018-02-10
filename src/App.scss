@@ -77,7 +77,6 @@ $light-grey: #dcdcdc !global;
 
 #Dialword_mobile_code {
   background-size: cover;
-  // background-image: $mobile-data-background;
   background-color: grey;
 }
  //Here the header and Headings are placed in order and sized accordingly
@@ -161,9 +160,7 @@ $light-grey: #dcdcdc !global;
 }
 
 //I change the content of these using the function from Dialword Content but there is a flash, if I had more time I'd like to
-//to set the content to move up and change color. But I would also like some more clarification on what was being asked for here.
-//The instructions were not clear if there was supposed to be a transition effect where the content litterally moves up
-//or if the content can just be switched out. Also it wasn't specified where the style changes were supposed to take effect
+//to set the content to move up and change color.
 
 
 
@@ -204,7 +201,6 @@ $light-grey: #dcdcdc !global;
   margin-bottom: 3vmax;
   text-align: center;
   background-color: rgba(220,220,220,.85);
-  // border: solid blue thick;
   border-radius: 10px;
   h2 {
     margin-top: 5px;
@@ -256,7 +252,6 @@ $light-grey: #dcdcdc !global;
 }
 
 .Form {
-  // order: 4;
   width: 25vmax;
   height: 8.5vmax;
   margin-right: 8vmax;
@@ -264,7 +259,6 @@ $light-grey: #dcdcdc !global;
   margin-bottom: 3vmax;
   text-align: center;
   background-color: rgba(220,220,220,.85);
-  // border: solid blue thick;
   border-radius: 5px;
   h2 {
     margin-top: 5px;
