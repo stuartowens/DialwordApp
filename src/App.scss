@@ -520,17 +520,12 @@ $parallax-ios : true !default;
 }
 
 @include parallax-init;
-// @include parallax-init;
 
 
 
 .How {
-  // @include parallax-init();
-  // background-image: $about-background;
+
   background-color: darkblue;
-  // @media screen and (min-width: 800px) {
-  //   background-image: $mobile-about-background;
-  // }
   background-size: cover;
   height: 60vw;
   position: relative;
