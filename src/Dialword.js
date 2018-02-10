@@ -4,6 +4,9 @@ import React from 'react';
 import Header from './Header';
 import { connect } from 'react-redux';
 
+// I have to import the contact component because here because I want to have a contact page here in the beginning of the landing percentage
+
+
 import {
   component as Contact,
   selectors as contactSel,
