@@ -8,6 +8,7 @@ import Faq from './Faq';
 import Tips from './Tips';
 import Footer from './Footer';
 import How from './How';
+//Here is where most of the components live, ones that are included are both connected to redux and some are not
 import {
   component as Contact,
   selectors as contactSel,

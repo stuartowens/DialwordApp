@@ -7,6 +7,8 @@ import { key as numberKey,
 import { key as contactKey,
         reducer as contactReducer } from './contact/index';
 
+//this is where I use combine reducers to bring in all the reducers from all three smart components
+
 export default combineReducers({
   [numbersKey]: numbersReducer,
   [numberKey]: numberReducer,
