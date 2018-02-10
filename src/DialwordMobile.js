@@ -4,6 +4,8 @@ import React from 'react';
 import Header from './Header.js';
 import { connect } from 'react-redux';
 
+// I import the Contact component again here because I need it for the mobile version
+
 import {
   component as Contact,
   selectors as contactSel,
