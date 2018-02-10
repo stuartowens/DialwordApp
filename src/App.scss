@@ -8,6 +8,7 @@ $light-grey: #dcdcdc !global;
 
 
 
+
 .App {
   background-size: cover;
   background-repeat: no-repeat;
@@ -72,6 +73,7 @@ $light-grey: #dcdcdc !global;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  background-image: url('./images/lady.jpg');
 }
 .Dialword-Mobile {
   display: none;
@@ -187,7 +189,7 @@ $light-grey: #dcdcdc !global;
     margin-bottom: 0;
     margin-top: 0;
     // border-bottom: solid white thick;
-    border-bottom: solid $blue thick;    
+    border-bottom: solid $blue thick;
   }
   h1 {
     // color: white;
@@ -532,7 +534,8 @@ $parallax-ios : true !default;
 
 .How {
 
-  background-color: darkblue;
+  // background-color: darkblue;
+  background-image: url('./images/elderly-call.jpg');
   background-size: cover;
   height: 60vw;
   position: relative;
