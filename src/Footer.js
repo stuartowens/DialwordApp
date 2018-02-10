@@ -1,9 +1,7 @@
 import React from 'react';
 var logo = require('./images/logo.png');
-// import './app.scss';
-// var Logo2 = require('../images/logos/logo_trilogy_blk.svg');
 
-//Here I have to require the logo since it's is a svg file but it works fine a
+
 
 class Footer extends React.Component {
   render() {
