@@ -341,8 +341,6 @@ $light-grey: #dcdcdc !global;
 }
 
 .Tips {
-  // background-image: $featuring-background;
-  // background-color: blue;
   background-size: cover;
   display: flex;
   flex-direction: row;
@@ -350,17 +348,14 @@ $light-grey: #dcdcdc !global;
   height: 50vmax;
   justify-content: space-around;
   @media only screen and (max-aspect-ratio: 16/9) {
-    // background-image: $mobile-featuring-background;
     background-color: grey;
     align-items: center;
     height: auto;
   }
 }
 .lazy-tip {
-  // background-image: $mobile-featuring-background;
   background-color: green;
   @media screen and (min-width: 800px) {
-    // background-image: $featuring-background;
     background-color: grey;
   }
   background-size: cover;
@@ -416,38 +411,6 @@ $light-grey: #dcdcdc !global;
     }
    }
 }
-
-//I had to give the phone image some individual settings since it's so different
-
-// #feature-6 {
-//   img {
-//     height: 35vw;
-//     width: auto;
-//   }
-//   p {
-//     font-size: .8vw;
-//   }
-//   @media only screen and (max-aspect-ratio: 16/9) {
-//     order: 0;
-//     img {
-//       height: 45vmax;
-//     }
-//     p {
-//       // display:none
-//     }
-//   }
-// }
-
-//The disclaimer which is at the bottom on the mobile version so it's hidden here
-
-// #feature-6 {
-//   display: none;
-//   font-size: 1.8;
-//   @media only screen and (max-aspect-ratio: 16/9) {
-//     display: block;
-//   }
-// }
-
 
 
 .Faq {
