@@ -1,6 +1,8 @@
 //Setting some values for colors and backgrounds here to be used below
-$blue: #38bcdb !global;
-$blue-hover: #2e91a3 !global;
+// $blue: #38bcdb !global;
+$blue: #f4b942 !global;
+// $blue-hover: #2e91a3 !global;
+$blue-hover: #f49841 !global;
 $grey: #a9aaab !global;
 $light-grey: #dcdcdc !global;
 
@@ -99,7 +101,7 @@ $light-grey: #dcdcdc !global;
     right: 0;
     width: 30vmax;
     font-size: .9vmax;
-    color: #dcdcdc;
+    // color: #dcdcdc;
     position: absolute;
     text-align:right;
     padding-right: 2vmax;
@@ -141,7 +143,8 @@ $light-grey: #dcdcdc !global;
   text-align: right;
   h2 {
     font-size: 1.7vmax;
-    color: #38bcbd;
+    // color: #38bcbd;
+    color: $blue;
     margin-bottom: .3vw;
   }
   p {
@@ -153,7 +156,8 @@ $light-grey: #dcdcdc !global;
     border-bottom: solid $blue-hover thick;
   }
   h1 {
-    color: #38bcbd;
+    // color: #38bcbd;
+    color: $blue;
     font-style: oblique;
     margin-top: 0;
   }
@@ -172,7 +176,8 @@ $light-grey: #dcdcdc !global;
   text-align: right;
   h2 {
     font-size: 1.7vmax;
-    color: white;
+    // color: white;
+    color: $blue;
     margin-bottom: .3vw;
   }
   p {
@@ -181,10 +186,12 @@ $light-grey: #dcdcdc !global;
     font-weight: 200;
     margin-bottom: 0;
     margin-top: 0;
-    border-bottom: solid white thick;
+    // border-bottom: solid white thick;
+    border-bottom: solid $blue thick;    
   }
   h1 {
-    color: white;
+    // color: white;
+    color: $blue;
     font-style: oblique;
     margin-top: 0;
   }
