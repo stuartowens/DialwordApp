@@ -3,25 +3,13 @@ $blue: #38bcdb !global;
 $blue-hover: #2e91a3 !global;
 $grey: #a9aaab !global;
 $light-grey: #dcdcdc !global;
-// $code-background: url("../images/code_Dialword.jpg");
-// $data-background: url("../images/data_Dialword.jpg");
-// $faq-background: url("../images/faq.jpg");
-// $about-background: url("../images/about.jpg");
-// $featuring-background: url("../images/featuring.jpg");
-// $mobile-code-background: url("../images/mobile/code_mobile_Dialword.jpg");
-// $mobile-data-background: url("../images/mobile/data_mobile_Dialword.jpg");
-// $mobile-about-background: url("../images/mobile/about_mobile.jpg");
-// $mobile-faq-background: url("../images/mobile/faq_mobile.jpg");
-// $mobile-featuring-background: url("../images/mobile/featuring_mobile.jpg");
 
 
 
 .App {
-  // background-image:url("https://image.freepik.com/free-vector/business-background-design_1300-345.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
-  // height: 800px;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -60,21 +48,16 @@ $light-grey: #dcdcdc !global;
 .App {
   font-family: 'Roboto';
 }
-//Setting the backgrounds based on screen width, later on I used aspect ratio almost exclusively
-// I might return to this @media setting instead
+
 #Dialword_code {
-  // background-image: $mobile-code-background;
   background-color: grey;
   @media screen and (min-width: 800px) {
-    // background-image: $code-background;
     background-color: grey;
   }
 }
 #Dialword_data {
-  // background-image: $mobile-data-background;
   background-color: grey;
   @media screen and (min-width: 800px) {
-    // background-image: $data-background;
     background-color: grey;
   }
 }
