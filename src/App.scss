@@ -761,7 +761,6 @@ $parallax-ios : true !default;
       right:0;
       vertical-align: middle;
       color: white;
-      // width: 45vmax;
       font-size: 6.5vw;
       text-align: center;
     }
@@ -875,7 +874,6 @@ $parallax-ios : true !default;
     }
   }
   .How {
-    // background-image: $mobile-about-background;
     background-color: grey;
     min-height: 1000px;
     h1 {
@@ -949,16 +947,13 @@ $parallax-ios : true !default;
     h1 {
       font-size: 8vw;
       text-align: center;
-      // line-height: 6vmax;
       margin: 3vmax;
     }
   }
   .Collapsible {
     vertical-align: middle;
     width: 85vmax;
-    // margin: 3vmax;
     max-width: inherit;
-    // overflow: hidden;
     span {
       max-width: inherit;
       font-size: 3.5vw;
@@ -976,7 +971,6 @@ $parallax-ios : true !default;
   }
   span.Collapsible__trigger {
     max-width: 75vmax;
-    // overflow: hidden;
   }
   .Collapsible__trigger.is-closed:before {
     font-size: 3vw;
@@ -987,8 +981,7 @@ $parallax-ios : true !default;
   }
 }
 
-//This is kind of my hack version of a carousel, I looked at using another carousel but it seemed a little overkill
-//I also wonder if it would be ok to incorporate a carousel from bootstrap framework.
+
 //My only regret here would be putting the on click on the entire paragraph element on the bottom and again not having
 // the exact icons but I was again able to use fontAwesome icons that look similar.
 //I would  incorporate a more traditional carousel here for sure if there were more items to shift through
@@ -1017,11 +1010,8 @@ $parallax-ios : true !default;
 	-o-backface-visibility: hidden;
 	backface-visibility: hidden;
 	position: absolute;
-  // background-image: $mobile-data-background;
   background-color: grey;
   background-size: cover;
-  // border: solid thick green;
-	// background-color: black;
 	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.14);
   width: 100vw;
 }
@@ -1029,9 +1019,7 @@ $parallax-ios : true !default;
 /* front pane, placed above back */
 .front {
 	z-index: 2;
-  // background-image: $mobile-code-background;
   background-color: grey;
-  // border: solid thick red;
 
 }
 
@@ -1051,7 +1039,6 @@ $parallax-ios : true !default;
 	perspective: 800px;
 	margin-bottom: 30px;
   z-index: 0;
-  // border: thick purple solid;
   height: 57vw;
 }
 /* flip the pane when hovered */
@@ -1061,46 +1048,3 @@ $parallax-ios : true !default;
 	-o-transform: rotateY(180deg);
 	transform: rotateY(180deg);
 }
-
-
-// .Form {
-//   width: 100%;
-//   height: 45vw;
-//   margin: 0;
-//   padding: 0;
-//   h2 {
-//     margin-top: 0;
-//     padding-top: 3vw;
-//     font-size: 4.5vmax;
-//   }
-//   p {
-//     font-size: 3.2vw;
-//     color: darken(grey,10);
-//     font-weight: 300;
-//   }
-//   input {
-//     width: 27vmax;
-//     height: 6vmax;
-//     margin-bottom: 2vmax;
-//     font-size: 2.5vmax;
-//   }
-//   button{
-//     width: 85vw;
-//     height: 12vw;
-//     margin-bottom: 3vw;
-//     font-size: 3.2vmax;
-//   }
-// }
-
-// @mixin cycleBackground($time,$background-array){
-//   @for $i from 0 to $background-array.length {
-//
-//   }
-// }
-
-// .zero {
-//   // @include carousel-animation(  $frames: 5, $static: 17.5%, $animation-name: "carousel_1");
-//   height: 700px;
-//   border: solid green thick;
-// }
-// @include carousel-animation(2, 17.5%, 'carousel_1')
