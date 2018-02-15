@@ -546,12 +546,12 @@ $parallax-ios : true !default;
     margin : auto;
     position : absolute;
     text-decoration: underline;
-    color: $blue;
+    // color: $blue;
     text-align: center;
   }
   p {
     width: 75vw;
-    color: white;
+    // color: white;
     text-align: center;
     font-size: 1.5vw;
     font-family: 'Roboto Slab';
