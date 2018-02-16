@@ -26,7 +26,7 @@ export default function Numbers({ numbers, fetchStatus, onFetch,
       <div className="Feature">
         <ul>
           {numbers.map(number => {
-            return <div>
+            return <div className="Numbers">
               <li key={ number._id }>
                 <h3 >Number: {number.number}</h3>
                 <button onClick={ () => onFetchNumber(number.name) } >

@@ -12,7 +12,7 @@ export default function Number({ number, fetchStatus }) {
 function numberDetails(number) {
   if (!number) { return; }
   return (
-    <div>
+    <div className="Number">
       <h3> {number[0].name}  {number[0].number}</h3>
       <h3>Category: { number[0].category }</h3>
       <h3> Unavailable Markets {number[0].unavailable_markets} </h3>

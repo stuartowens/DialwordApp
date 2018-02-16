@@ -679,6 +679,19 @@ $parallax-ios : true !default;
   }
 }
 
+.Number {
+  background-color: blue;
+  color: green;
+  width: 20vw;
+}
+
+.Numbers {
+  background-color: purple;
+  color: green;
+  width: 10vw;
+
+}
+
 @media only screen and (max-aspect-ratio: 16/9) {
   .Dialword {
     display: none;
