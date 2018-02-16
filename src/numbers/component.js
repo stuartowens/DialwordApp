@@ -24,18 +24,14 @@ export default function Numbers({ numbers, fetchStatus, onFetch,
         <button onClick={ onCancelFetch }>Cancel</button>
       </form>
       <div className="Feature">
-        <ul>
           {numbers.map(number => {
             return <div className="Numbers">
-              <li key={ number._id }>
-                <h3 >Number: {number.number}</h3>
+                <h3 >{number.number}</h3>
                 <button onClick={ () => onFetchNumber(number.name) } >
                   { number.name }
                 </button>
-              </li>
             </div>
           })}
-        </ul>
       </div>
     </div>
   );
