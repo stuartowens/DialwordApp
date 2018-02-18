@@ -22,6 +22,14 @@ export default function Numbers({ numbers, fetchStatus, onFetch,
           <option value="Pain">Music</option>
           <option value="Pain">Movies</option>
           <option value="Pain">Tax</option>
+          <option value="Pain">Pain</option>
+          <option value="Pain">Childcare</option>
+          <option value="Pain">Cleaning</option>
+          <option value="Pain">Communication</option>
+          <option value="Pain">Technology</option>
+          <option value="Pain">Dental</option>
+          <option value="Pain">Education</option>
+
         </select>
         <input type="text" autoFocus="true" name="name" onChange={ onSearchFieldFilled } />
         <button onClick={ onCancelFetch }>Cancel</button>
