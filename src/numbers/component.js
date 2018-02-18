@@ -19,6 +19,9 @@ export default function Numbers({ numbers, fetchStatus, onFetch,
           <option value="Bailbonds">Bailbonds</option>
           <option value="Snoring">Snoring</option>
           <option value="Pain">Pain</option>
+          <option value="Pain">Music</option>
+          <option value="Pain">Movies</option>
+          <option value="Pain">Tax</option>
         </select>
         <input type="text" autoFocus="true" name="name" onChange={ onSearchFieldFilled } />
         <button onClick={ onCancelFetch }>Cancel</button>
