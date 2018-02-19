@@ -44,10 +44,10 @@ export default function Numbers({ numbers, fetchStatus, onFetch,
           <option value="Pain">Heating</option>
           <option value="Pain">Holidays</option>
           <option value="Pain">Home Improvement</option>
-          <option value="Pain">Flooring</option>
-          <option value="Pain">Flooring</option>
-          <option value="Pain">Flooring</option>
-          <option value="Pain">Flooring</option>
+          <option value="Pain">Industry</option>
+          <option value="Pain">Insurance</option>
+          <option value="Pain">Investments</option>
+          <option value="Pain">Laundry</option>
 
 
         </select>
