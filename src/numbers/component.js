@@ -33,13 +33,22 @@ export default function Numbers({ numbers, fetchStatus, onFetch,
           <option value="Pain">Education</option>
           <option value="Pain">Farming</option>
           <option value="Pain">Flooring</option>
+          <option value="Pain">Flowers</option>
+          <option value="Pain">Food</option>
+          <option value="Pain">Funeral</option>
+          <option value="Pain">Furniture</option>
+          <option value="Pain">Gambling</option>
+          <option value="Pain">Gaming</option>
           <option value="Pain">Flooring</option>
           <option value="Pain">Flooring</option>
           <option value="Pain">Flooring</option>
           <option value="Pain">Flooring</option>
           <option value="Pain">Flooring</option>
           <option value="Pain">Flooring</option>
-          v
+          <option value="Pain">Flooring</option>
+          <option value="Pain">Flooring</option>
+          <option value="Pain">Flooring</option>
+
 
         </select>
         <input type="text" autoFocus="true" name="name" onChange={ onSearchFieldFilled } />
