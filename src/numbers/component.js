@@ -33,6 +33,13 @@ export default function Numbers({ numbers, fetchStatus, onFetch,
           <option value="Pain">Education</option>
           <option value="Pain">Farming</option>
           <option value="Pain">Flooring</option>
+          <option value="Pain">Flooring</option>
+          <option value="Pain">Flooring</option>
+          <option value="Pain">Flooring</option>
+          <option value="Pain">Flooring</option>
+          <option value="Pain">Flooring</option>
+          <option value="Pain">Flooring</option>
+          v
 
         </select>
         <input type="text" autoFocus="true" name="name" onChange={ onSearchFieldFilled } />
