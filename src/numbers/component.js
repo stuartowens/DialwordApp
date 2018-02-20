@@ -48,7 +48,16 @@ export default function Numbers({ numbers, fetchStatus, onFetch,
           <option value="Pain">Insurance</option>
           <option value="Pain">Investments</option>
           <option value="Pain">Laundry</option>
+          <option value="Pain">Laundry</option>
+          <option value="Pain">Laundry</option>
+          <option value="Pain">Laundry</option>
+          <option value="Pain">Laundry</option>
+          <option value="Pain">Laundry</option>
+          <option value="Pain">Laundry</option>
+          <option value="Pain">Laundry</option>
 
+
+          <option value="Pain">Laundry</option>
 
         </select>
         <input type="text" autoFocus="true" name="name" onChange={ onSearchFieldFilled } />
