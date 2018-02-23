@@ -46,7 +46,7 @@ class Tips extends React.Component {
           </div>
         </div>
       </div>
-      )
+    )
   }
 }
 
