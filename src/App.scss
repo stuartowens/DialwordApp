@@ -10,8 +10,10 @@ $light-grey: #dcdcdc !global;
 @mixin hideAll($HideContent, $Hidden, $Components) {
   @if $HideContent {
     $Hidden: 'Visible';
-    @for $i from 0 to $Components {
-
+    @for $i from 0 to $Components.length {
+      $Components {
+        visibility: $Hidden;
+      }
     }
   }
 
