@@ -89,10 +89,12 @@ export default function Numbers({ numbers, fetchStatus, onFetch,
           <option value="Pain">Moving</option>
           <option value="Pain">Moving Companies</option>
           <option value="Pain">Outdoor Advertising</option>
-          <option value="Pain"></option>
-          <option value="Pain"></option>
-          <option value="Pain"></option>
-          <option value="Pain"></option>
+          <option value="Pain">Packing Companies</option>
+          <option value="Pain">Photography</option>
+          <option value="Pain">Plumbing</option>
+          <option value="Pain">Printing</option>
+          <option value="Pain">Promotion</option>
+
 
 
 
