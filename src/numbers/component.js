@@ -53,11 +53,11 @@ export default function Numbers({ numbers, fetchStatus, onFetch,
           <option value="Pain">Lifestyles</option>
           <option value="Pain">Locksmith</option>
           <option value="Pain">Lumber Sales</option>
-          <option value="Pain">Laundry</option>
-          <option value="Pain">Laundry</option>
-          <option value="Pain">Laundry</option>
-          <option value="Pain">Laundry</option>
-          <option value="Pain">Laundry</option>
+          <option value="Pain">Mailing</option>
+          <option value="Pain">Marketing</option>
+          <option value="Pain">Martial Arts</option>
+          <option value="Pain">Medical</option>
+          <option value="Pain">Medical-Addiction</option>
           <option value="Pain">Laundry</option>
           <option value="Pain">Laundry</option>
           <option value="Pain">Laundry</option>
