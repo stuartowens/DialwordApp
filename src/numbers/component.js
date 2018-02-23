@@ -83,9 +83,17 @@ export default function Numbers({ numbers, fetchStatus, onFetch,
           <option value="Pain">Medical - Radiology</option>
           <option value="Pain">Medical - Sleep Medicine</option>
           <option value="Pain">Medical - Surgeons</option>
-          <option value="Pain">Medical - </option>
-          <option value="Pain">Medical - </option>
-          <option value="Pain">Medical - </option>
+          <option value="Pain">Medical - Surgery</option>
+          <option value="Pain">Medical - Urology</option>
+          <option value="Pain">Medical - Wound Care</option>
+          <option value="Pain"></option>
+          <option value="Pain"></option>
+          <option value="Pain"></option>
+          <option value="Pain"></option>
+          <option value="Pain"></option>
+          <option value="Pain"></option>
+          <option value="Pain"></option>
+
 
 
           <option value="Pain">Laundry</option>
