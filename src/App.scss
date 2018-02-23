@@ -7,17 +7,17 @@ $grey: #a9aaab !global;
 $light-grey: #dcdcdc !global;
 
 
-@mixin hideAll($HideContent, $Hidden, $Components) {
-  @if $HideContent {
-    $Hidden: 'Visible';
-    @for $i from 0 to $Components.length {
-      $Components[i] {
-        visibility: $Hidden;
-      }
-    }
-  }
-
-}
+// @mixin hideAll($HideContent, $Hidden, $Components) {
+//   @if $HideContent {
+//     $Hidden: 'Visible';
+//     @for $i from 0 to $Components.length {
+//       $Components[i] {
+//         visibility: $Hidden;
+//       }
+//     }
+//   }
+//
+// }
 
 .App {
   background-size: cover;
