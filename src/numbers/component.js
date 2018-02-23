@@ -99,6 +99,12 @@ export default function Numbers({ numbers, fetchStatus, onFetch,
           <option value="Pain">Religion</option>
           <option value="Pain">Retail</option>
           <option value="Pain">Scuba Diving</option>
+          <option value="Pain">Security</option>
+          <option value="Pain">Smoking Cessation</option>
+          <option value="Pain">Sporting Goods</option>
+          <option value="Pain">Sports</option>
+          <option value="Pain">Swimming Pool</option>
+
 
 
 
