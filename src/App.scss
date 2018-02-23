@@ -11,7 +11,7 @@ $light-grey: #dcdcdc !global;
   @if $HideContent {
     $Hidden: 'Visible';
     @for $i from 0 to $Components.length {
-      $Components {
+      $Components[i] {
         visibility: $Hidden;
       }
     }
