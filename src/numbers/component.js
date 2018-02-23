@@ -94,6 +94,7 @@ export default function Numbers({ numbers, fetchStatus, onFetch,
           <option value="Pain">Plumbing</option>
           <option value="Pain">Printing</option>
           <option value="Pain">Promotion</option>
+          <option value="Pain">Quit Smoking</option>
           <option value="Pain">Radio</option>
           <option value="Pain">Real Estate</option>
           <option value="Pain">Religion</option>
@@ -109,6 +110,10 @@ export default function Numbers({ numbers, fetchStatus, onFetch,
           <option value="Pain">Trailers</option>
           <option value="Pain">Travel</option>
           <option value="Pain">Vet</option>
+          <option value="Pain">Vision</option>
+          <option value="Pain">Weight Loss</option>
+          <option value="Pain">Wood Sales</option>
+
 
 
 
